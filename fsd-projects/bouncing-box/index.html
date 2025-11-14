@@ -83,7 +83,9 @@ var speed = 10
 positionX = positionX + speed;
 moveBoxTo(200);
 moveBoxTo(positionX)
-if(positionX)      
+if(positionX > boardWidth){
+  speed = speed * -1
+}      
 
           
         }
